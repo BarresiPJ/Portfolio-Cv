@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background:#252A2E ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    color:burlywood;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: burlywood;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: rgb(199, 166, 122);
+}
+.nav-responsive{
+    background-color: burlywood;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(222,184,135,.5), rgba(222,184,135)),
+    url(img/fondo2.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: burlywood;
+    display: grid;
+    justify-content:center;
+}
+.inicio .contenido-banner{
+    padding: 10px;
+    background-color: #252A2E;
+    max-width: 300px;
+    margin:  auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid burlywood;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+.inicio .contenido-banner h2{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 42px;
+    line-height: 45px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: burlywood;
+}
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: burlywood;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: burlywood;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: burlywood;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: burlywood;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+.sobremi button a{
+   font-family: 'Josefin sans', sans-serif;
+   color: #fff;
+}
+
+/* SECCION S K I L L S */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.contenido-seccion {
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 300px; /*Cada uno tendra un minimo de 300px y se ajustara en función del tamaño de la pantalla*/
+    flex: 1 1 300px; /* El ancho mínimo es de 300px, pero si hay más elementos se van a ajustar  para que ocupe todo el espacio disponible */
+    flex: 1 1 300px; /* El tamaño mínimo y máximo de un elemento en una fila, si no hay espacio para todos los elementos el navegador lo ajustará*/
+    flex: 1 1 300px; /* El ancho mínimo es de 300px y el máximo es ilimitado*/
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.items img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.items p {
+    margin: 0;
+}
+
+/* Media query para pantallas más pequeñas, ajusta el tamaño de la imagen */
+@media (max-width: 768px) {
+    .items img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color: #1e2326;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 10px 50px;
+    color: #fff;
+}
+
+.curriculum .col.izquierda h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.curriculum .col.izquierda h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.curriculum .col.izquierda .casa{
+    font-family: 'Josefin Sans', sans-serif;
+    color: burlywood;
+    margin-top: 20px;
+    line-height: 1.9em;
+
+}
+
+.curriculum .col.izquierda .fecha{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1em;
+    color: white;
+    display: grid;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.curriculum .col.izquierda p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+/* Estilos para la columna izquierda */
+.curriculum .col.izquierda {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* Estilos para la imagen a la derecha */
+.curriculum .col.derecha {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* Ajustes para la imagen */
+.curriculum .col.derecha img {
+    max-width: 95%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 10px;
+}
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container img {
+    margin-right: 10px; /* Agregar un margen entre la imagen y los íconos */
+}
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container .icon-container {
+    display: flex; /* Utilizar un contenedor flex para los íconos */
+}
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container .icon-container a {
+    margin-left: 0px; /* Agregar un margen entre los íconos */
+}
+
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 42px;
+    line-height: 45px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.curriculum .contenido-seccion .fila .col.izquierda .image-container a:hover{
+    background-color: burlywood;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .contenido-seccion {
+    display:  flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.portfolio .contenido-seccion  .card{
+    width: 325px;
+    background-color: #1e2326;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+    margin: 20px;
+}
+
+.portfolio .contenido-seccion  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0,0,0,.3);
+}
+
+.portfolio .contenido-seccion  .card img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio .contenido-seccion .card-content{
+    padding: 16px;
+}
+
+.portfolio .contenido-seccion .card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.portfolio .contenido-seccion .card-content p{
+    color: #7d7d7d;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.portfolio .contenido-seccion .card-content a{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: burlywood !important;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    transition: all .3s ease;
+    color: #fff;
+}
+
+/* SECCION FOOTER */
+
+footer{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

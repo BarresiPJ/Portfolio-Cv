@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pablo Barresi - Portfolio Web</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">PabloBarresi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">TECNOLOGÍAS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">ESTUDIOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Diseño sin título.png" alt="">
+            </div>
+            <h1>Pablo Barresi</h1>
+            <h2>Analista de Sistemas - Frontend Developer</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/pablo-barresi/"><i class="fa-brands fa-linkedin-in" target="_blank"></i></a>
+                <a href="mailto:pablojavierba@gmail.com"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+                <a href="https://github.com/BarresiPJ"><i class="fa-brands fa-github" target="_blank"></i></a>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p>¡Hola!. Bienvenidos a mi portfolio web. Mi nombre es <span>Pablo Barresi</span> y tengo 28 años. Como estudiante de la carrera de Analista de Sistemas, mi recorrido académico me permitió descubrir un gran interés por el desarrollo de aplicaciones y sitios web. Mi enfoque principal se centra en el aprendizaje constante y la búsqueda continua de nuevas habilidades dentro de este campo. Si bien es el área de la que me gustaría formar parte, también me resulta fácil, cómodo y práctico realizar tareas de análisis funcional.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                             (011) 1558687346
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            pablojavierba@gmail.com
+                        </li>
+      
+                        <li>
+                            <strong>Residencia</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                    </ul>
+                </div>
+            <button>
+                <a href="cv/Currículum de Pablo Barresi.pdf" target="_blank">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>TECNOLOGÍAS</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="items">
+                    <img src="img/html.png" width="100" height="100"/>
+                    <p>HTML</p>
+                </div>
+
+                <div class="items">
+                    <img src="img/css.png" width="100" height="100" />
+                    <p>CSS</p>
+                </div>
+
+                <div class="items">
+                    <img src="img/JavaScript-logo.png" width="100" height="100"/>
+                    <p>JavaScript</p>
+                </div>
+                
+                <div class="items">
+                    <img src="img/bootstrap.png" width="100" height="100"/>
+                    <p>Bootstrap</p>
+                </div>
+                
+                <div class="items">
+                    <img src="img/python.png" width="100" height="100"/>
+                    <p>Python</p>
+                </div>
+
+                <div class="items"> 
+                    <img src="img/django.png" width="95" height="100"/>
+                    <p>Django Framework</p>
+                </div>
+
+                <div class="items">
+                    <img src="img/csharp.png" width="100" height="100"/>
+                    <p>C# .NET Framework</p>
+                </div>
+
+                <div class="items">
+                    <img src="img/PostgresqlS.png" width="100" height="100"/>
+                    <p>SQL - PostgreSQL</p>
+                </div>
+            </div>
+                <!-- Professional Skills -->
+                <div class="items">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <h2>FORMACIÓN ACADÉMICA</h2>
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col izquierda">
+                        <h4>Analista de Sistemas de Información</h4>
+                        <img src="img/logolapaz.png" width="35" height="35" alt="">
+                        <span class="casa">Instituto Superior Nuestra Señora de la Paz</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Cursando el 3er año de la carrera de Analista de Sistemas, con un total de 20 materias aprobadas y un promedio de 8,95.</p>
+                        
+                        <div class="image-container">
+                            <img src="img/bicloudshd.png" width="120" height="120" alt="">
+                            <div class="icon-container">
+                                <a href="https://www.youtube.com/@BI-Clouds-tk5ru"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/biclouds/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="title-container">
+                            <h5>¿Qué es BI-Clouds?</h5>
+                        </div>
+                        <p>BI-Clouds nació a fines de 2021 con mi grupo de amigos y compañeros de la carrera. Esta es nuestra foto presentando el proyecto de Administraciones Balenciaga que se verá a continuación en mi portfolio. ¿Por qué presento al equipo?. Porque creo que además de los conocimientos y el aprendizaje que uno debe sumar, es importante saber trabajar en equipo en el área IT. Por eso quiero destacar como una de mis habilidades, el carisma que poseo para trabajo en equipo: aportando desde soluciones y empatía por el compañero de trabajo.</p>
+                </div>
+
+                <div class="col derecha">
+                    <img src="img/biclouds.jpg" alt="Imagen de la expo con Bi-Clouds"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="contenido-seccion">
+            <div class="card">
+                <img src="img/adminbalenweb.png" alt="">
+                <div class="card-content">
+                    <h3>Administraciones Balenciaga</h3>
+                    <p>Sistema de gestión de propiedades realizado por BI-Clouds. Desarrollo en HTML, CSS, JavaScript, Python y Django</p>
+                    <a href="https://adminbalenciaga.vercel.app/" target="_blank">Ver sitio web</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/cotizadorweb.png" alt="">
+                <div class="card-content">
+                    <h3>Seguros del hogar</h3>
+                    <p>Cotizador de seguros realizado en el curso de EducaciónIT. Desarrollo en HTML, CSS y JavaScript</p>
+                    <a href="https://cotizadordeseguros.vercel.app/" target="_blank">Ver sitio web</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        © 2024 Desarrollado por: Pablo Javier Barresi
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
